@@ -2,3 +2,33 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+// Headers
+.mat-typography h1 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    line-height: 1.2em;
+}
+
+// Elements
+.general-error {
+    padding: 10px;
+    background-color: #f3f3f3;
+    border-left: 5px solid #f44336;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/**
+* ANGULAR MATERIAL
+*/
+// Form
+mat-form-field {
+    width: 100%;
+}
+
+.mat-form-field-wrapper {
+    margin-bottom: 10px;
+}

@@ -1,8 +1,8 @@
-<div>
+<div id="form-container">
     <h1>Rapport de défauts</h1>
 
     <form [formGroup]="defectForm" (ngSubmit)="onSubmitDefectForm()">        
-        <mat-error *ngIf="!networkStatus">Connectez vous à internet pour envoyer votre rapport</mat-error>
+        <mat-error class="general-error" *ngIf="!networkStatus">Connectez vous à internet pour envoyer votre rapport</mat-error>
 
         <div>
             <mat-form-field appearance="fill">
@@ -27,7 +27,7 @@
           
         <div>
             <mat-form-field appearance="fill">
-                <mat-label i18n>Message</mat-label>
+                <mat-label i18n>Informations supplémentaires</mat-label>
                 <textarea matInput formControlName="additionalNote"></textarea>
             </mat-form-field>
         </div>
