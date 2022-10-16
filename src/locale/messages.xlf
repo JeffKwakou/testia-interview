@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="6283931782286298812" datatype="html">
+        <source>Type de défaut</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/defect-form/defect-form.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1186861313648985686" datatype="html">
+        <source>Délaminage</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/defect-form/defect-form.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6602726562398952839" datatype="html">
+        <source>Porosité</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/defect-form/defect-form.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4431855435099541996" datatype="html">
+        <source>Inclusion</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/defect-form/defect-form.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6428681736990756726" datatype="html">
+        <source>Ce champs est requis</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/defect-form/defect-form.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/defect-form/defect-form.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8602954585241684662" datatype="html">
+        <source>Nom de l&apos;opérateur</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/defect-form/defect-form.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8837335812441568050" datatype="html">
+        <source>Ce champs ne doit pas comporter de chiffres</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/defect-form/defect-form.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8066608938393600549" datatype="html">
+        <source>Message</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/defect-form/defect-form.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7243381769177289361" datatype="html">
+        <source>Envoyer</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/defect-form/defect-form.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
