@@ -1,0 +1,32 @@
+<div>
+    <form [formGroup]="defectForm" (ngSubmit)="onSubmitDefectForm()">
+        <div>
+            <mat-form-field appearance="fill">
+                <mat-label>Type de défaut</mat-label>
+                <mat-select formControlName="defectType">
+                  <mat-option value="delaminage">Délaminage</mat-option>
+                  <mat-option value="porosite">Porosité</mat-option>
+                  <mat-option value="inclusion">Inclusion</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+
+        <div>
+            <mat-form-field appearance="fill">
+                <mat-label>Nom de l'opérateur</mat-label>
+                <input matInput formControlName="operatorName">
+            </mat-form-field>
+        </div>
+          
+        <div>
+            <mat-form-field appearance="fill">
+                <mat-label>Message</mat-label>
+                <textarea matInput formControlName="additionalNote"></textarea>
+            </mat-form-field>
+        </div>
+
+        <div>
+            <button mat-flat-button type="submit" color="primary">Envoyer</button>
+        </div>
+    </form>
+</div>
