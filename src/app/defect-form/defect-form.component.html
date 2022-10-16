@@ -1,6 +1,8 @@
 <div>
+    <h1>Rapport de défauts</h1>
+
     <form [formGroup]="defectForm" (ngSubmit)="onSubmitDefectForm()">        
-        <mat-error *ngIf="formError">{{formError}}</mat-error>
+        <mat-error *ngIf="!networkStatus">Connectez vous à internet pour envoyer votre rapport</mat-error>
 
         <div>
             <mat-form-field appearance="fill">
@@ -31,7 +33,7 @@
         </div>
 
         <div>
-            <button mat-flat-button type="submit" color="primary" i18n>Envoyer</button>
+            <button mat-flat-button type="submit" color="primary" [disabled]="defectForm.invalid" i18n>Envoyer</button>
         </div>
     </form>
 </div>
