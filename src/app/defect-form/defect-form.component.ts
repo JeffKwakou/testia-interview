@@ -30,11 +30,8 @@ export class DefectFormComponent implements OnInit {
         'message': this.defectForm.value.additionalNote,
         'date': Date.now()
       }
-
-      let header = new HttpHeaders();
-      header = header.append('content-type', 'application/json');
       
-      this.http.post('https://my-json-server.typicode.com/JeffKwakou/testia-interview/posts', formData, {headers : header, observe: 'response'}).subscribe((res) => {
+      this.http.post('https://my-json-server.typicode.com/JeffKwakou/testia-interview/posts', formData, {observe: 'response'}).subscribe((res) => {
         console.log(res)
       })
     } else if (!navigator.onLine) {
