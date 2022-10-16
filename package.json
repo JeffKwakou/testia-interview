@@ -1,20 +1,27 @@
 {
   "name": "testia",
+  "description": "Technical interview testia",
+  "author": "Jeff Gbeho",
+  "license": "MIT",
   "version": "0.0.0",
+  "main": "main.js",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "start:electron": "ng build --base-href ./ && electron ."
   },
   "private": true,
   "dependencies": {
     "@angular/animations": "^14.2.0",
+    "@angular/cdk": "^14.2.5",
     "@angular/common": "^14.2.0",
     "@angular/compiler": "^14.2.0",
     "@angular/core": "^14.2.0",
     "@angular/forms": "^14.2.0",
+    "@angular/material": "^14.2.5",
     "@angular/platform-browser": "^14.2.0",
     "@angular/platform-browser-dynamic": "^14.2.0",
     "@angular/router": "^14.2.0",
@@ -27,6 +34,7 @@
     "@angular/cli": "~14.2.3",
     "@angular/compiler-cli": "^14.2.0",
     "@types/jasmine": "~4.0.0",
+    "electron": "^21.1.1",
     "jasmine-core": "~4.3.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.1.0",
