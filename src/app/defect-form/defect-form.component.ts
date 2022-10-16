@@ -33,7 +33,7 @@ export class DefectFormComponent implements OnInit {
       let header = new HttpHeaders();
       header = header.append('content-type', 'application/json');
       
-      this.http.post('https://my-json-server.typicode.com/JeffKwakou/testia-interview/defects', formData, {headers : header, observe: 'response'}).subscribe((res) => {
+      this.http.post('https://my-json-server.typicode.com/JeffKwakou/testia-interview/posts', formData, {headers : header, observe: 'response'}).subscribe((res) => {
         console.log(res)
       })
     } else {
