@@ -9,6 +9,8 @@ import { FormBuilder, Validators } from '@angular/forms';
 })
 export class DefectFormComponent implements OnInit {
 
+  formError: string;
+
   constructor(private formBuilder: FormBuilder, private http: HttpClient) { }
 
   ngOnInit(): void {
@@ -21,8 +23,7 @@ export class DefectFormComponent implements OnInit {
   })
 
   onSubmitDefectForm() {
-    if (!this.defectForm.invalid && navigator.onLine) {
-      console.log('submit form')
+    if (this.defectForm.valid && navigator.onLine) {
       let formData = {
         'defectType': this.defectForm.value.defectType,
         'name': this.defectForm.value.operatorName,
@@ -36,10 +37,10 @@ export class DefectFormComponent implements OnInit {
       this.http.post('https://my-json-server.typicode.com/JeffKwakou/testia-interview/posts', formData, {headers : header, observe: 'response'}).subscribe((res) => {
         console.log(res)
       })
+    } else if (!navigator.onLine) {
+      this.formError = "Un problème de connexion à internet a été rencontré"
     } else {
-      console.log("form invalid")
+      this.formError = "Veuillez corriger les erreurs avant de l'envoyer à nouveau"
     }
-    
   }
-
 }
