@@ -32,3 +32,25 @@ mat-form-field {
 .mat-form-field-wrapper {
     margin-bottom: 10px;
 }
+
+// Inputs
+input.mat-input-element, textarea.mat-input-element, .mat-select-value {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+// Buttons
+.btn-large {
+    width: 100%;
+}
+
+.mat-flat-button.mat-primary {
+    padding: 5px 32px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: filter ease-in-out .3s;
+
+    &:hover {
+        filter: brightness(1.2);
+    }
+}

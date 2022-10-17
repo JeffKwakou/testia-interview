@@ -28,12 +28,12 @@
         <div>
             <mat-form-field appearance="fill">
                 <mat-label i18n>Informations supplémentaires</mat-label>
-                <textarea matInput formControlName="additionalNote"></textarea>
+                <textarea matInput formControlName="additionalNote" rows="5"></textarea>
             </mat-form-field>
         </div>
 
         <div>
-            <button mat-flat-button type="submit" color="primary" [disabled]="defectForm.invalid" i18n>Envoyer</button>
+            <button mat-flat-button type="submit" class="btn-large" color="primary" [disabled]="defectForm.invalid" i18n>Envoyer</button>
         </div>
     </form>
 </div>
