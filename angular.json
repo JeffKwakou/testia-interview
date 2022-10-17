@@ -5,9 +5,15 @@
   "projects": {
     "testia": {
       "i18n": {
-        "sourceLocale": "fr",
+        "sourceLocale": {
+          "baseHref": "",
+          "code": "fr"
+        },
         "locales": {
-          "en-US": "src/locale/messages.en-US.xlf"    
+          "en-US": {
+            "translation": "src/locale/messages.en-US.xlf",
+            "baseHref": ""
+          } 
         }
       },
       "projectType": "application",
