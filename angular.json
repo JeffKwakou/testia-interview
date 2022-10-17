@@ -4,6 +4,12 @@
   "newProjectRoot": "projects",
   "projects": {
     "testia": {
+      "i18n": {
+        "sourceLocale": "fr",
+        "locales": {
+          "en-US": "src/locale/messages.en-US.xlf"    
+        }
+      },
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,6 +23,8 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "localize": true,
+            "aot": true,
             "outputPath": "dist",
             "index": "src/index.html",
             "main": "src/main.ts",

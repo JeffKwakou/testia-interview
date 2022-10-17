@@ -6,6 +6,11 @@ const routes: Routes = [
   {
     path: '',
     component: DefectFormComponent
+  },
+  {
+    path: '**',
+    redirectTo:'', 
+    pathMatch: 'full' 
   }
 ];
 

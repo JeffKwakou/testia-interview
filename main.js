@@ -5,6 +5,8 @@ const url = require('url')
 let win = undefined
 
 const createWindow = () => {
+    const language = app.getLocale();
+
     win = new BrowserWindow({
         width: 800,
         height: 600,
@@ -15,7 +17,7 @@ const createWindow = () => {
 
     win.loadURL(
         url.format({
-          pathname: path.join(__dirname, `/dist/index.html`),
+          pathname: path.join(__dirname, '/dist/' + language + '/index.html'),
           protocol: "file:",
           slashes: true
         })

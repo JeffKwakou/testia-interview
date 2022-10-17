@@ -47,13 +47,13 @@ export class DefectFormComponent implements OnInit {
       const APIURL = 'https://my-json-server.typicode.com/JeffKwakou/testia-interview/posts'
       
       this.http.post(APIURL, formData, {observe: 'response'}).subscribe((res) => {
-        this._snackBar.open('Votre rapport a été envoyé avec succès', 'OK');
+        this._snackBar.open($localize`:@@DefectForm.Success:Votre rapport a été envoyé avec succès`, 'OK');
       },
       (error) => {
-        this._snackBar.open('Un problème est survenu lors de l\'envoi du rapoort', 'OK');
+        this._snackBar.open($localize`:@@DefectForm.Error:Un problème est survenu lors de l'envoi du rapoort`, 'OK');
       })
     } else if (!navigator.onLine) {
-      this._snackBar.open('Impossible d\'envoyer votre rapport sans connexion internet', 'OK');
+      this._snackBar.open($localize`:@@DefectForm.NoConnexion:Impossible d'envoyer votre rapport sans connexion internet`, 'OK');
     }
   }
 
